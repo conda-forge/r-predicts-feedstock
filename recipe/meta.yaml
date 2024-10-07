@@ -1,4 +1,4 @@
-{% set version = '0.1-11' %}
+{% set version = "0.1-16" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/predicts_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/predicts/predicts_{{ version }}.tar.gz
-  sha256: 39de4c59191fa3df8c6eedddbcd32f240d99cd1224a38a30a222727cbc576acb
+  sha256: 6fd32900cff4404d2e8f7e910f579a65fbf11635a335bf3ce5ce3f06ccc2d53a
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -38,9 +38,7 @@ test:
 about:
   home: https://rspatial.org/sdm/
   license: GPL-3.0-or-later
-  summary: Methods for spatial predictive modeling, especially for spatial distribution models.
-    This includes algorithms for model fitting and prediction, as well as methods for
-    model evaluation.
+  summary: Methods for spatial predictive modeling, especially for spatial distribution models. This includes algorithms for model fitting and prediction, as well as methods for model evaluation.
   license_family: GPL3
   license_file:
     - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
