@@ -1,4 +1,4 @@
-{% set version = "0.1-17" %}
+{% set version = "0.1-19" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/predicts_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/predicts/predicts_{{ version }}.tar.gz
-  sha256: 880f0f5f3532d2683f138baf06f13d8d54dbc9dbbbb38075a11c34e1b56befe4
+  sha256: f5eb79cb5b7cfc885c3f31952b1d40c3e7b927d5ce5784ff235622e1651d4afc
 
 build:
   number: 0
